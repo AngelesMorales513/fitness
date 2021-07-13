@@ -1,3 +1,4 @@
+import 'package:fitness/screens/planSemanal_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness/screens/zona_screen.dart';
@@ -35,7 +36,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => PlanSemanal()));
+                  },
                   color: Colors.teal,
                   minWidth: 200.0,
                   child: Row(
